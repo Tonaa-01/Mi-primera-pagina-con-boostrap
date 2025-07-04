@@ -7,10 +7,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" >
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./assets/css/style.css">
     </head>
-    <body>
 
+    <body data-bs-spy="scroll" data-bs-target=".navbar">
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg bg-white sticky-top">
         <div class="container-fluid">
@@ -23,7 +24,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link" href="#hero">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
@@ -57,9 +58,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="text-uppercase text-white fw-semibold display-1">Welcome to elixir</h1>
-                    <h5 class="text-white mt-3 mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, nostrum.</h5>
-                    <div >
+                    <h1  data-aos="fade-left" class="text-uppercase text-white fw-semibold display-1">Welcome to elixir</h1>
+                    <h5 class="text-white mt-3 mb-4"  data-aos="fade-right">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, nostrum.</h5>
+                    <div  data-aos="fade-up" data-aos-delay="50">
                         <a href=# class="btn btn-brand me-2">Get started</a>
                         <a href=# class="btn btn-light ms-2">Our portfolio</a>
                     </div>
@@ -72,7 +73,7 @@
     <section id="about" class="section-padding">
         <div class="container">
             <div class="row">
-                <div class="col-12 text-center">
+                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="50">
                     <div class="section-title">
                         <h1 class="display-4 fw-semibold ">About us</h1>
                         <div class="line"></div>
@@ -81,13 +82,13 @@
                 </div>
             </div>
             <div class="row justify-content-between align-items-center">
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-down" data-aos-delay="50">
                     <img src="./assets/imagenes/about.jpg" alt="">
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-5" data-aos="fade-down" data-aos-delay="50">
                     <h1>About Elixir</h1>
                     <p class="mt-3 mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure ab neque impedit!</p>
-                    <div class="d-flex pt-4 mb-3">
+                    <div class="d-flex pt-4 mb-3" >
                         <div class="iconbox me-4">
                             <i class="ri-mail-send-fill"></i>
                         </div>
@@ -123,7 +124,7 @@
     <section id="services" class="section-padding border-top">
         <div class="container">
             <div class="row">
-                <div class="col-12 text-center">
+                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="50">
                     <div class="section-title">
                         <h1 class="display-4 fw-semibold ">Awesome service</h1>
                         <div class="line"></div>
@@ -131,7 +132,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row g-4 text-center">
+            <div class="row g-4 text-center" data-aos="fade-down" data-aos-delay="50">
                 <div class="col-lg-4 col-sm-6">
                     <div class="service theme-shadow p-lg-5 p-4">
                         <div class="iconbox">
@@ -193,7 +194,7 @@
     <!-- COUNTER -->
     <section id="counter" class="section-padding">
         <div class="container text-center">
-            <div class="row g-4">
+            <div class="row g-4"  data-aos="fade-up" data-aos-delay="50">
                 <div class="col-lg-3 col-sm-6">
                     <h1 class="text-white display-4">90,00+</h1>
                     <h6 class="text-uppercase  mb-0 text-white mt-3">Total Dowlands</h6>
@@ -218,7 +219,7 @@
     <section id="portfolio" class="section-padding">
     <div class="container">
         <div class="row">
-            <div class="col-12 text-center">
+            <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="50">
                 <div class="section-title">
                     <h1 class="display-4 fw-semibold">Our Portfolio</h1>
                     <div class="line"></div>
@@ -226,7 +227,7 @@
                 </div>
             </div>
         </div>
-        <div class="row g-4">
+        <div class="row g-4" data-aos="fade-down" data-aos-delay="50">
             <div class="col-md-4">
                 <div class="portfolio-item image-zoom mt-4">
                     <div class="image-zoom-warpper">
@@ -277,7 +278,7 @@
     <section id="reviews" class="section-padding bg-light">
         <div class="container">
             <div class="row ">
-                <div class="col-12 text-center">
+                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="50">
                     <div class="section-title">
                         <h1 class="display-4 fw-semibold">Testimonials</h1>
                         <div class="line"></div>
@@ -285,7 +286,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row gy-5 gx-4">
+            <div class="row gy-5 gx-4" data-aos="fade-down" data-aos-delay="50">
                 <div class="col-lg-4 col-sm-6">
                     <div class="review">
                         <div class="review-head p-4 bg-white theme-shadow">
@@ -420,15 +421,15 @@
     <section id="team" class="section-padding">
         <div class="container">
             <div class="row ">
-                <div class="col-12 text-center">
+                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="50">
                     <div class="section-title">
-                        <h1 class="display-4 fw-semibold">team Members</h1>
+                        <h1 class="display-4 fw-semibold">Team Members</h1>
                         <div class="line"></div>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio molestias provident harum nihil aspernatur laborum.</p>
                     </div>
                 </div>
             </div>
-            <div class="row g-4 text-center">
+            <div class="row g-4 text-center" data-aos="fade-down" data-aos-delay="50">
                 <div class="col-md-4">
                     <div class="team-member image-zoom">
                         <div class="image-zoom-warpper">
@@ -470,7 +471,7 @@
     <section class="section-padding" id="contact">
         <div class="container">
             <div class="row ">
-                <div class="col-12 text-center">
+                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="50">
                     <div class="section-title">
                         <h1 class="display-4  text-white  fw-semibold">Gete in touch</h1>
                         <div class="line bg-white"></div>
@@ -478,7 +479,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center">
+            <div class="row justify-content-center" data-aos="fade-right" data-aos-delay="50">
                 <div class="col-lg-8">
                     <form action="#" class="row g-3 p-lg-5 p-4 bg-white theme-shadow">
                         <div class="form-group col-lg-6">
@@ -504,16 +505,120 @@
             </div>
         </div>
     </section>
+    
+    <!-- BLOG -->
+    <section class="section-padding " id="blog">
+        <div class="container">
+            <div class="row ">
+                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="50">
+                    <div class="section-title">
+                        <h1 class="display-4    fw-semibold">Recent News & Articles</h1>
+                        <div class="line "></div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio molestias provident harum nihil aspernatur laborum.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" data-aos="fade-down" data-aos-delay="50">
+                <div class="col-md-4" >
+                    <div class="team-member image-zoom">
+                        <div class="image-zoom-warpper">
+                            <img src="./assets/imagenes/blog-post-1.jpg" alt="">
+                        </div>
+                        <h5 class="mt-4">Web Design 2022</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, recusandae.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member image-zoom">
+                        <div class="image-zoom-warpper">
+                            <img src="./assets/imagenes/blog-post-2.jpg" alt="">
+                        </div>
+                        <h5 class="mt-4">Web Design 2022</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, recusandae.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member image-zoom">
+                        <div class="image-zoom-warpper">
+                            <img src="./assets/imagenes/blog-post-3.jpg" alt="">
+                        </div>
+                        <h5 class="mt-4">Web Design 2022</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, recusandae.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-
-
-
-
-
-
+    <!-- footer -->
+    <footer class="bg-dark">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row gy-5">
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="#" ><img src="./assets/imagenes/logo-white.svg" alt=""></a>
+                        <div class="line"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, voluptatem.</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="ri-facebook-box-fill"></i></a>
+                            <a href="#"><i class="ri-instagram-fill"></i></a>
+                            <a href="#"><i class="ri-twitter-x-fill"></i></a>
+                            <a href="#"><i class="ri-github-fill"></i></a>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <h5 class="text-white mb-0">SERVICES</h5>
+                        <div class="line"></div>
+                        <ul>
+                            <li><a href="#"> UI Design</a></li>
+                            <li><a href="#"> UX Design</a></li>
+                            <li><a href="#"> Brandign Desing</a></li>
+                            <li><a href="#"> Logo Design</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <h5 class="text-white mb-0">ABOUT</h5>
+                        <div class="line"></div>
+                        <ul>
+                            <li><a href="#"> Blog</a></li>
+                            <li><a href="#"> Services</a></li>
+                            <li><a href="#"> Company</a></li>
+                            <li><a href="#"> Carrer</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <h5 class="text-white mb-0">CONTACT</h5>
+                        <div class="line"></div>
+                        <ul>
+                            <li>Ney york , NY 3300</li>
+                            <li>(414586)-3017</li>
+                            <li>www.example.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row g-4 justify-content-between">
+                    <div class="col-auto">
+                        <p class="mb-0"><i class="ri-registered-line"></i> Copyright Elixir. All Rights Reserved</p>
+                    </div>
+                    <div class="col-auto">
+                        <p class="mb-0">Design by <a href="#">TONAAA</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="/assets/js/main.js"></script>
     </body>
 </html>
